@@ -27,8 +27,7 @@ public class MyScanFiles {
 	public void ScanAll(String path, Boolean hidden) {
 		try {
 			ScanAgain(path, hidden);
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -65,8 +64,7 @@ public class MyScanFiles {
 					}
 				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -86,8 +84,7 @@ public class MyScanFiles {
 			for (File image : images) {
 				System.out.println("F: " + image.getAbsolutePath());
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -102,8 +99,7 @@ public class MyScanFiles {
 					System.out.println("D: " + file.getAbsolutePath());
 				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -124,8 +120,7 @@ public class MyScanFiles {
 				System.out.println("F: " + image.getAbsolutePath());
 				return true;
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 

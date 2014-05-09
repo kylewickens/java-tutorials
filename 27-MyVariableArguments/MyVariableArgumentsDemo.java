@@ -43,8 +43,7 @@ public static void main(String[] args) {
 		System.out.println("Minimum is " + min(4.5, 3.3, 2.7, 1.4));
 		System.out.println("Minimum is " + min(new double[] {4.8, 3.7, 2.6, 1.5}));
 		System.out.println("Minimum is " + min());
-	}
-	catch (IllegalArgumentException e) {
+	} catch (IllegalArgumentException e) {
 		System.err.println("IllegalArgumentException: " + e.getMessage());
 	}
 }

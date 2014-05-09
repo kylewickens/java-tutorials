@@ -28,8 +28,7 @@ public static void main(String args[]){
     try {
         Date t = ft.parse(date);
         System.out.println(date + " parses as " + t);
-    }
-    catch (ParseException e) {
+    } catch (ParseException e) {
         System.out.println("Oops " + ft);
     }
 }
