@@ -22,7 +22,7 @@ import java.io.FileInputStream;
 
 class MyFileInputDemo {
 	public static void main(String[] args) {
-		if (args.length != 2) {
+		if (args.length == 1) {
 			File file = new File(args[0]);
 			FileInputStream input = null;
  
