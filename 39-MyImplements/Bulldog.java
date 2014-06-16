@@ -17,4 +17,7 @@
 *
 ***************************************************************************/
 public class Bulldog extends Dog {
+	public void eats() {
+		System.out.println("bulldog eats");
+	}
 }

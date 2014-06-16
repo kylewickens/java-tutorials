@@ -16,5 +16,6 @@
 * KIND, either express or implied.
 *
 ***************************************************************************/
-public interface Animal {
+public abstract interface Animal {
+	public void eats();
 }

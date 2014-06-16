@@ -23,5 +23,8 @@ class MyImplementsDemo {
 
 		System.out.println("Dog IS-A Animal: " + (d instanceof Animal));
 		System.out.println("Bulldog IS-A Dog: " + (b instanceof Dog));
+
+		d.eats();
+		b.eats();
 	}
 }
