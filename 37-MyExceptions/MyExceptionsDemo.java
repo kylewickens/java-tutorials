@@ -30,12 +30,12 @@ class MyTestException {
 }
 
 class MyExceptionsDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		if (args.length == 1) {
 			try {
 				MyTestException t = new MyTestException(args[0]);
 			} catch (MyException e) {
-				System.out.println("caught the exception");
+				System.err.println("caught the exception");
 			}
 		}
 	}

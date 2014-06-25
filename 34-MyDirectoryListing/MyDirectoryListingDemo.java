@@ -19,7 +19,7 @@
 import java.io.File;
 
 class MyDirectoryListingDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		if (args.length == 1) {
 			File f1 = new File(args[0]);
 

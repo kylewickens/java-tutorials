@@ -17,24 +17,23 @@
 *
 ***************************************************************************/
 public class MyMethodsParametersDemo {
+	public static void jumbleNumbers(int n1, int n2, int n3) {
+		System.out.println("original order: " + n1 + ", " + n2 + ", " + n3);
 
-public static void jumbleNumbers(int n1, int n2, int n3) {
-	System.out.println("original order: " + n1 + ", " + n2 + ", " + n3);
+		int t = n1;
+		n1 = n2;
+		n2 = n3;
+		n3 = t;
 
-	int t = n1;
-	n1 = n2;
-	n2 = n3;
-	n3 = t;
+		System.out.println("new order     : " + n1 + ", " + n2 + ", " + n3);
+	}
 
-	System.out.println("new order     : " + n1 + ", " + n2 + ", " + n3);
-}
+	public static void main(String[] args) {
+		int n1 = 10;
+		int n2 = 20;
+		int n3 = 30;
 
-public static void main(String[] args) {
-	int n1 = 10;
-	int n2 = 20;
-	int n3 = 30;
-
-	jumbleNumbers(n1, n2, n3);
-	jumbleNumbers(n1, n2, n3);
-}
+		jumbleNumbers(n1, n2, n3);
+		jumbleNumbers(n1, n2, n3);
+	}
 }

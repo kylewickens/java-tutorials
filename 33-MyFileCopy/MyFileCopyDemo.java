@@ -25,7 +25,7 @@ import java.io.DataOutputStream;
 import java.io.FileNotFoundException;
 
 class MyFileCopyDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		if (args.length == 2) {
 			DataInputStream inp = null;
 			DataOutputStream out = null;

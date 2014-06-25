@@ -18,12 +18,12 @@
 ***************************************************************************/
 public class MyDoWhileLoop {
 
-public static void main(String args[]) {
-	int i = 1;
+	public static void main(String args[]) {
+		int i = 1;
 
-	do {
-		System.out.println("i : " + i);
-		i ++;
-	} while (i < 15);
-}
+		do {
+			System.out.println("i : " + i);
+			i ++;
+		} while (i < 15);
+	}
 }

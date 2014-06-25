@@ -17,14 +17,14 @@
 *
 ***************************************************************************/
 public class MyScanFilesDemo {
-private static final String DIRECTORY = "sysroot/sdcard/Pictures/";
+	private static final String DIRECTORY = "sysroot/sdcard/Pictures/";
 
-public static void main(String args[]) {
-	MyScanFiles mScanFiles = new MyScanFiles();
+	public static void main(String args[]) {
+		MyScanFiles mScanFiles = new MyScanFiles();
 
-	mScanFiles.ScanDir(DIRECTORY);
-	mScanFiles.ScanJPG(DIRECTORY);
-	mScanFiles.ScanAll(DIRECTORY, false);
-	mScanFiles.ScanAll(DIRECTORY, true);
-}
+		mScanFiles.ScanDir(DIRECTORY);
+		mScanFiles.ScanJPG(DIRECTORY);
+		mScanFiles.ScanAll(DIRECTORY, false);
+		mScanFiles.ScanAll(DIRECTORY, true);
+	}
 }

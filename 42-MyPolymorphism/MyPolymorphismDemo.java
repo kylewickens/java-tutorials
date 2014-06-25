@@ -17,7 +17,7 @@
 *
 ***************************************************************************/
 class MyPolymorphismDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Dog d = new Dog();
 		Dog b = new Bulldog(1);
 		Dog o = new Doberman(2);

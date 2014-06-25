@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 class MyFileReadWriteDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		if (args.length == 1) {
 			File f = new File(args[0]);
 

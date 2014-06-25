@@ -17,7 +17,7 @@
 *
 ***************************************************************************/
 class MyOverrideDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Dog d = new Dog();
 		Bulldog b = new Bulldog();
 

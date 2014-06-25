@@ -17,7 +17,7 @@
 *
 ***************************************************************************/
 class MyAbstractDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 // object creation
 		MyMobilePhone myPhone = new MyMobilePhone();
 // call class method to set phone colour

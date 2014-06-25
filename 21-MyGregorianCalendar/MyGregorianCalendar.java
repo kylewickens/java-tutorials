@@ -20,33 +20,33 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class MyGregorianCalendar {
-public static void main(String args[]) {
-	String months[]={
-		"Jan", "Feb", "Mar", "Apr",
-		"May", "Jun", "Jul", "Aug",
-		"Sep", "Oct", "Nov", "Dec" };
+	public static void main(String args[]) {
+		String months[]={
+			"Jan", "Feb", "Mar", "Apr",
+			"May", "Jun", "Jul", "Aug",
+			"Sep", "Oct", "Nov", "Dec" };
 
-	GregorianCalendar gcalendar = new GregorianCalendar();
+		GregorianCalendar gcalendar = new GregorianCalendar();
 
-	System.out.println("Date: "
-		+ months[gcalendar.get(Calendar.MONTH)]
-		+ " "
-		+ gcalendar.get(Calendar.DATE)
-		+ " "
-		+ gcalendar.get(Calendar.YEAR));
+		System.out.println("Date: "
+			+ months[gcalendar.get(Calendar.MONTH)]
+			+ " "
+			+ gcalendar.get(Calendar.DATE)
+			+ " "
+			+ gcalendar.get(Calendar.YEAR));
 
-	System.out.println("Time: "
-		+ gcalendar.get(Calendar.HOUR)
-		+ ":"
-		+ gcalendar.get(Calendar.MINUTE)
-		+ ":"
-		+ gcalendar.get(Calendar.SECOND));
+		System.out.println("Time: "
+			+ gcalendar.get(Calendar.HOUR)
+			+ ":"
+			+ gcalendar.get(Calendar.MINUTE)
+			+ ":"
+			+ gcalendar.get(Calendar.SECOND));
 
-	if (gcalendar.isLeapYear(gcalendar.get(Calendar.YEAR))) {
-		System.out.println("The current year is a leap year");
-	} else {
-		System.out.println("The current year is not a leap year");
+		if (gcalendar.isLeapYear(gcalendar.get(Calendar.YEAR))) {
+			System.out.println("The current year is a leap year");
+		} else {
+			System.out.println("The current year is not a leap year");
+		}
 	}
-}
 }
 

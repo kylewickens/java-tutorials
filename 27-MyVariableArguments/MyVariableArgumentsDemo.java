@@ -19,32 +19,31 @@
 import java.lang.IllegalArgumentException;
 
 public class MyVariableArgumentsDemo {
-
-public static double min(double x, double y) {
-	return x < y ? x : y;
-}
-
-public static double min(double... numbers) throws IllegalArgumentException {
-	if (numbers.length == 0) {
-		throw new IllegalArgumentException("required some arguments");
+	public static double min(double x, double y) {
+		return x < y ? x : y;
 	}
 
-	double minimum = numbers[0];
+	public static double min(double... numbers) throws IllegalArgumentException {
+		if (numbers.length == 0) {
+			throw new IllegalArgumentException("required some arguments");
+		}
 
-	for (int i = 1; i < numbers.length; i ++) {
-		minimum = min(minimum, numbers[i]);
+		double minimum = numbers[0];
+
+		for (int i = 1; i < numbers.length; i ++) {
+			minimum = min(minimum, numbers[i]);
+		}
+
+		return minimum;
 	}
 
-	return minimum;
-}
-
-public static void main(String[] args) {
-	try {
-		System.out.println("Minimum is " + min(4.5, 3.3, 2.7, 1.4));
-		System.out.println("Minimum is " + min(new double[] {4.8, 3.7, 2.6, 1.5}));
-		System.out.println("Minimum is " + min());
-	} catch (IllegalArgumentException e) {
-		System.err.println("IllegalArgumentException: " + e.getMessage());
+	public static void main(String[] args) {
+		try {
+			System.out.println("Minimum is " + min(4.5, 3.3, 2.7, 1.4));
+			System.out.println("Minimum is " + min(new double[] {4.8, 3.7, 2.6, 1.5}));
+			System.out.println("Minimum is " + min());
+		} catch (IllegalArgumentException e) {
+			System.err.println("IllegalArgumentException: " + e.getMessage());
+		}
 	}
-}
 }

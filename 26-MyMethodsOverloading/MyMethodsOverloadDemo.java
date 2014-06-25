@@ -17,24 +17,23 @@
 *
 ***************************************************************************/
 public class MyMethodsOverloadDemo {
+	public static int min(int x, int y) {
+		return x < y ? x : y;
+	}
 
-public static int min(int x, int y) {
-	return x < y ? x : y;
-}
+	public static double min(double x, double y) {
+		return x < y ? x : y;
+	}
 
-public static double min(double x, double y) {
-	return x < y ? x : y;
-}
+	public static int min(int w, int x, int y, int z) {
+		return min(min(w, x), min(y, z));
+	}
 
-public static int min(int w, int x, int y, int z) {
-	return min(min(w, x), min(y, z));
-}
+	public static double min(double w, double x, double y, double z) {
+		return min(min(w, x), min(y, z));
+	}
 
-public static double min(double w, double x, double y, double z) {
-	return min(min(w, x), min(y, z));
-}
-
-public static void main(String[] args) {
-	System.out.println("Minimum is " + min(4.5, 3.3, 2.7, 1.4));
-}
+	public static void main(String[] args) {
+		System.out.println("Minimum is " + min(4.5, 3.3, 2.7, 1.4));
+	}
 }

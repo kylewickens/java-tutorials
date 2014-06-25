@@ -21,7 +21,7 @@ import com.blogspot.kylewickens.animals.Animal;
 import com.blogspot.kylewickens.animals.Bulldog;
 
 class MyPackagesDemo {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Dog d = new Dog();
 		Bulldog b = new Bulldog();
 

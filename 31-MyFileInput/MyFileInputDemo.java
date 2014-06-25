@@ -25,12 +25,12 @@ class MyFileInputDemo {
 		if (args.length == 1) {
 			File file = new File(args[0]);
 			FileInputStream input = null;
- 
+
 			try {
 				input = new FileInputStream(file);
- 
+
 				System.out.println("Total file size (in bytes) : " + input.available());
- 
+
 				int content;
 				while ((content = input.read()) != -1) {
 					System.out.print((char) content);
