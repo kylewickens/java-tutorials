@@ -17,7 +17,6 @@
 *
 ***************************************************************************/
 class KidsNames {
-
 	enum KidsNamesName { DANIEL, SAMUEL, KYLE, LEIA, RONALD, JAYNE }
 	KidsNamesName name;
 
@@ -38,7 +37,6 @@ class KidsNames {
 }
 
 public class KidsNamesTest {
-
 	public static void main(String args[]) {
 		KidsNames test = new KidsNames();
 		test.name = KidsNames.KidsNamesName.SAMUEL;
