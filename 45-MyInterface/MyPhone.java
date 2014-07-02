@@ -15,7 +15,8 @@
 * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
 * KIND, either express or implied.
 *
-***************************************************************************/public interface MyPhone {
+***************************************************************************/
+public interface MyPhone {
 	public void ring();
 	public void answer();
 	public void ignore();
