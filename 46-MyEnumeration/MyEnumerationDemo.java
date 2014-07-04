@@ -19,7 +19,7 @@
 import java.util.Vector;
 import java.util.Enumeration;
 
-class MyVectorDemo {
+class MyEnumerationDemo {
 	public static void main(String[] args) {
 		Vector<String> dogBreeds = new Vector<String>();
 
