@@ -22,15 +22,28 @@ import java.util.BitSet;
 
 class BitSetTest {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		BitSet bits1 = fromString("1000001");
-		BitSet bits2 = fromString("1111111");
+		BitSet myBits1 = fromString("1000001");
+		BitSet myBits2 = fromString("1111111");
+		BitSet myBits3 = new BitSet(16);
 
-		displayString(bits1);
-		displayString(bits2);
+		for (int i = 0; i < 16; i ++) {
+			if ((i % 3) == 0) {
+				myBits3.set(i);
+			}
+		}
 
-		bits2.and(bits1);
+		displayString(myBits1);
+		displayString(myBits2);
+		displayString(myBits3);
 
-		System.out.println(toString(bits2));
+		myBits2.and(myBits1);
+		displayString(myBits2);
+
+		myBits2.or(myBits3);
+		displayString(myBits2);
+
+		myBits2.xor(myBits1);
+		displayString(myBits2);
 	}
 
 	private static BitSet fromString(final String s) {
@@ -42,6 +55,6 @@ class BitSetTest {
 	}
 
 	private static void displayString(final BitSet bits) {
-		System.out.println(toString(bits));
+		System.out.println(bits + " = " + toString(bits));
 	}
 }
