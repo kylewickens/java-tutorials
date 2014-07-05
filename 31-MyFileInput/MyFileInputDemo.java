@@ -36,13 +36,15 @@ class MyFileInputDemo {
 					System.out.print((char) content);
 				}
 			} catch (IOException e) {
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
 				e.printStackTrace();
 			} finally {
 				try {
 					if (input != null)
 						input.close();
-				} catch (IOException ex) {
-					ex.printStackTrace();
+				} catch (IOException e) {
+					System.err.println(e.getClass().getName() + ": " + e.getMessage());
+					e.printStackTrace();
 				}
 			}
 		}

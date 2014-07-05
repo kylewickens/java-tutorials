@@ -30,7 +30,8 @@ class MyFileReadWriteDemo {
 			try {
 				f.createNewFile();
 			} catch (IOException e) {
-				e.getMessage();
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			}
 
 			try {
@@ -38,7 +39,8 @@ class MyFileReadWriteDemo {
 				w.write("Welcome to kylewickens.blogspot.co.uk\n");
 				w.close();
 			} catch (IOException e) {
-				e.getMessage();
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			}
 
 			try {
@@ -50,9 +52,11 @@ class MyFileReadWriteDemo {
 
 				System.out.print(data);
 			} catch (FileNotFoundException e) {
-				e.getMessage();
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			} catch (IOException e) {
-				e.getMessage();
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			}
 		}
 	}

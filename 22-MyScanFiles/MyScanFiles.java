@@ -28,9 +28,9 @@ public class MyScanFiles {
 		try {
 			ScanAgain(path, hidden);
 		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			e.printStackTrace();
 		}
-
 	}
 
 	private void ScanAgain(String path, Boolean hidden) {
@@ -65,6 +65,7 @@ public class MyScanFiles {
 				}
 			}
 		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -79,12 +80,13 @@ public class MyScanFiles {
 					return file.getAbsolutePath().matches(".*\\.jpg");
 				}
 			};
-		
+
 			File[] images = dir.listFiles(filter);
 			for (File image : images) {
 				System.out.println("F: " + image.getAbsolutePath());
 			}
 		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -100,6 +102,7 @@ public class MyScanFiles {
 				}
 			}
 		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -121,6 +124,7 @@ public class MyScanFiles {
 				return true;
 			}
 		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			e.printStackTrace();
 		}
 

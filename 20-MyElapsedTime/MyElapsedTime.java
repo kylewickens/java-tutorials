@@ -29,7 +29,8 @@ public class MyElapsedTime {
 			long e = System.currentTimeMillis();
 			System.out.println("Difference is : " + (e - s));
 		} catch (Exception e) {
-			System.err.println("Oops");
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

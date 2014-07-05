@@ -29,7 +29,8 @@ public class MyParseDate {
 			Date t = ft.parse(date);
 			System.out.println(date + " parses as " + t);
 		} catch (ParseException e) {
-			System.err.println("Oops " + ft);
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

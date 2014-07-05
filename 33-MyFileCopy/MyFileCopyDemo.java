@@ -44,12 +44,15 @@ class MyFileCopyDemo {
 						out.writeByte(by);
 					}
 				} catch (EOFException e) {
-
+					System.err.println(e.getClass().getName() + ": " + e.getMessage() + " - expected");
+					e.printStackTrace();
 				}
 			} catch (FileNotFoundException e) {
-
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			} catch (IOException e) {
-
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			} finally {
 				try {
 					if (inp != null) {
@@ -59,7 +62,8 @@ class MyFileCopyDemo {
 						out.close();
 					}
 				} catch (IOException e) {
-
+					System.err.println(e.getClass().getName() + ": " + e.getMessage());
+					e.printStackTrace();
 				}
 			}
 		}

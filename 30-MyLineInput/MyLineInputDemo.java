@@ -30,7 +30,8 @@ class MyLineInputDemo {
 			try {
 				s = reader.readLine();
 			} catch (IOException e) {
-				System.out.println(e.getMessage());
+				System.err.println(e.getClass().getName() + ": " + e.getMessage());
+				e.printStackTrace();
 			}
 		} while (!s.equals("quit"));
 	}

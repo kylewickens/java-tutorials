@@ -43,7 +43,8 @@ public class MyVariableArgumentsDemo {
 			System.out.println("Minimum is " + min(new double[] {4.8, 3.7, 2.6, 1.5}));
 			System.out.println("Minimum is " + min());
 		} catch (IllegalArgumentException e) {
-			System.err.println("IllegalArgumentException: " + e.getMessage());
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }
