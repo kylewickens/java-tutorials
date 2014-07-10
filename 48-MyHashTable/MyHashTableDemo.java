@@ -33,6 +33,8 @@ class MyHashTableDemo {
 		myHashTable.put("Kuvasz", new Integer(9));
 		myHashTable.put("Landseer", new Integer(10));
 
+		System.out.println(myHashTable);
+
 		final String NAME = "Schipperke";
 		int value = myHashTable.get(NAME).intValue();
 		System.out.println(NAME + " = " + value);
