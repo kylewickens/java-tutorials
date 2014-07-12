@@ -16,7 +16,6 @@
 * KIND, either express or implied.
 *
 ***************************************************************************/
-
 class MyGenericDemo {
 	public static<E> void printAll(String title, E[] input) {
 		System.out.println(title);
